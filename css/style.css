@@ -1,0 +1,114 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+@font-face {
+    font-family:Petica;
+    src:url('../font/Pecita.otf') format('opentype'),
+    url('../fonts/Captureit.eot#iefix') format('embedded-opentype'),
+    url('../fonts/Captureit.woff') format('woff');
+   }
+/* --------------------------------------------- */
+/* -------------------HEARDER------------------- */
+/* --------------------------------------------- */
+
+.contact .icon{
+    flex-grow: 1;
+    margin-left: 5%;
+}
+
+.contact .icon li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.contact .icon li i {
+    color: #f9f9f9e7;
+}
+.contact {
+    background: linear-gradient(90deg,  #86136dcb,  #86136db7);
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.contact .link-signin{
+    flex-grow: 2;
+    text-align: right;
+    margin-right: 5%;
+}
+
+.contact .link-signin a{
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #f9f9f9e7;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 10px;
+    border-right: 1px solid #ddd;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient( 90deg,rgb(45,25,58, 0.9) 0%, rgb(60,37,69, 0.7) 30%);
+    height: 80px;
+}
+
+.logo {
+    flex-grow: 1;
+    margin-top: 10px;
+    font-family: Petica;
+    color: #DDD;
+    text-shadow: 0px 0 10px #fd7ae5;
+    position: relative;
+    left: 5rem;  
+}
+.logo1{
+    font-weight: 900;
+    font-size: 45px;
+    
+    
+}
+.logo2{
+    position: relative;
+    top: -10px;
+    left: 50px;
+    font-size: 20px;
+}
+
+.link-menu {
+    flex-grow: 5;
+    text-align: right;
+  
+}
+
+.link-menu a{
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f9f9f9e7;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 50px;
+ 
+}
+.button-store{
+    flex-grow: 1;
+}
+.button-store button{
+
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 15px;
+    padding: 5px 25px; 
+    text-transform: uppercase;
+    border: 3px solid #f9f9f9e7;
+    background-color: transparent;
+    color: #f9f9f9e7;
+    border-radius: 50px;
+}
