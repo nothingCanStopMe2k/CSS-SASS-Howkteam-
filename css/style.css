@@ -2,7 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 @font-face {
     font-family:Petica;
@@ -13,6 +13,7 @@
 /* --------------------------------------------- */
 /* -------------------HEARDER------------------- */
 /* --------------------------------------------- */
+
 
 .contact .icon{
     flex-grow: 1;
@@ -28,7 +29,7 @@
     color: #f9f9f9e7;
 }
 .contact {
-    background: linear-gradient(90deg,  #86136dcb,  #86136db7);
+    background: linear-gradient(90deg,  #86136dcb 0%,  #86136db7 30%);
     height: 40px;
     display: flex;
     align-items: center;
@@ -57,7 +58,7 @@
     justify-content: flex-start;
     align-items: center;
     background: linear-gradient( 90deg,rgb(45,25,58, 0.9) 0%, rgb(60,37,69, 0.7) 30%);
-    height: 80px;
+    height: 70px;
 }
 
 .logo {
@@ -69,23 +70,22 @@
     position: relative;
     left: 5rem;  
 }
-.logo1{
+/* .logo1{
     font-weight: 900;
     font-size: 45px;
-    
-    
+ 
 }
 .logo2{
     position: relative;
     top: -10px;
     left: 50px;
     font-size: 20px;
-}
+} */
 
 .link-menu {
     flex-grow: 5;
     text-align: right;
-  
+
 }
 
 .link-menu a{
@@ -96,12 +96,13 @@
     font-size: 15px;
     font-weight: 600;
     margin-right: 50px;
- 
+
 }
-.button-store{
+.btn-store{
     flex-grow: 1;
+
 }
-.button-store button{
+.btn-store button{
 
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 15px;
@@ -111,4 +112,115 @@
     background-color: transparent;
     color: #f9f9f9e7;
     border-radius: 50px;
+    margin-left: 10%;
 }
+
+header {
+    background-image: linear-gradient(90deg ,rgba(10, 15, 39, 0.6) 15%, rgba(44,39,61, 0.5) ), url('../img/hogwarts.jpg');
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+}
+
+.heading-text {
+    text-align: center;
+    position: relative;
+    top: 15%;
+}
+
+.main-text{
+    text-transform: uppercase;
+    font-family: Petica;
+    color: #DDD;
+    text-shadow: 0px 0 10px #fd7ae5;
+    font-weight: 600;
+    font-size: 80px;
+    letter-spacing: 0.2px;   
+    animation: appear 2s ease-out 1;
+}
+
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.sub-text {
+    color: #DDD;
+    text-shadow: 0px 0 10px #fd7ae5;
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    animation: appear 2s ease-out 1;
+}
+
+
+.btn, .btn:link, .btn:visited {
+    position: relative;
+    top: 10em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 600;
+    transform: translate(0, 0);
+    color: #777;
+    background-color: #f9f9f9ec;
+}
+
+.btn:hover{
+    transform: translate(0, -3px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .5);
+    
+}
+.btn:active{
+    background-color: #fcd0d0;
+    outline: none;
+    transform: translate(0, -1px);
+    box-shadow: 0 5px 10px rgba(253,122,229, .2);
+}
+
+.btn::after{
+    content: "";
+    display: inline-block;
+    background-color: #f9f9f9;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100px;
+    z-index: -1;
+    transition: all .4s;
+}
+
+/* Chỉnh button hover, nhưng mà của after */
+.btn:hover::after{ 
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInTop .5s ease-in 1s ; 
+    animation-fill-mode: backwards;
+}
+@keyframes moveInTop{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
