@@ -6,9 +6,15 @@
 }
 @font-face {
     font-family:Petica;
-    src:url('../font/Pecita.otf') format('opentype'),
-    url('../fonts/Captureit.eot#iefix') format('embedded-opentype'),
-    url('../fonts/Captureit.woff') format('woff');
+    src:url('../font/Pecita.otf') format('opentype');
+   }
+
+   @font-face {
+    font-family:HarryPotter;
+    src:url('../font/ParryHotter.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+
    }
 /* --------------------------------------------- */
 /* -------------------HEARDER------------------- */
@@ -63,24 +69,18 @@
 
 .logo {
     flex-grow: 1;
-    margin-top: 10px;
-    font-family: Petica;
-    color: #DDD;
-    text-shadow: 0px 0 10px #fd7ae5;
-    position: relative;
-    left: 5rem;  
+    height: 100%;
 }
-/* .logo1{
-    font-weight: 900;
-    font-size: 45px;
- 
-}
-.logo2{
+.logo img {
+    width: 60px;
+    height: 60px;
     position: relative;
-    top: -10px;
-    left: 50px;
-    font-size: 20px;
-} */
+    left: 50%;
+    top: 10%;
+    opacity: 0.95;
+}
+
+
 
 .link-menu {
     flex-grow: 5;
@@ -116,27 +116,45 @@
 }
 
 header {
-    background-image: linear-gradient(90deg ,rgba(10, 15, 39, 0.6) 15%, rgba(44,39,61, 0.5) ), url('../img/hogwarts.jpg');
-    height: 700px;
+    height: 750px;
     background-position: center;
     background-size: cover;
+    animation: change-bg 80s ease-in-out 0s infinite ;
 }
+
+@keyframes change-bg{
+    0%, 100%{   
+        background-image:linear-gradient(90deg ,rgba(10, 15, 39, 0.5) 15%, rgba(44,39,61, 0.4) ), url("../img/bg1.png");
+    }
+    25%{
+        background-image:linear-gradient(90deg ,rgba(10, 15, 39, 0.5) 15%, rgba(44,39,61, 0.4) ), url("../img/bg2.png");
+    }
+    50%{
+        background-image:linear-gradient(90deg ,rgba(10, 15, 39, 0.5) 15%, rgba(44,39,61, 0.4) ), url("../img/bg3.png");
+    }
+    75%{
+        background-image:linear-gradient(90deg ,rgba(10, 15, 39, 0.5) 15%, rgba(44,39,61, 0.4) ), url("../img/bg4.png");
+
+    }
+}
+
 
 .heading-text {
     text-align: center;
     position: relative;
-    top: 15%;
+    top: 5%;
 }
 
 .main-text{
     text-transform: uppercase;
-    font-family: Petica;
+    font-family: HarryPotter;
     color: #DDD;
     text-shadow: 0px 0 10px #fd7ae5;
     font-weight: 600;
     font-size: 80px;
     letter-spacing: 0.2px;   
     animation: appear 2s ease-out 1;
+    height: 170px;
 }
 
 @keyframes appear {
