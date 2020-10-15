@@ -1,0 +1,35 @@
+@keyframes change-bg{
+    0%, 100%{   
+        background-image:linear-gradient(90deg ,$background-linear-from, $background-linear-to ), url("../img/bg1.png");
+    }
+    25%{
+        background-image:linear-gradient(90deg ,$background-linear-from, $background-linear-to ), url("../img/bg2.png");
+    }
+    50%{
+        background-image:linear-gradient(90deg ,$background-linear-from, $background-linear-to ), url("../img/bg3.png");
+    }
+    75%{
+        background-image:linear-gradient(90deg ,$background-linear-from, $background-linear-to ), url("../img/bg4.png");
+
+    }
+}
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes moveInTop{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
