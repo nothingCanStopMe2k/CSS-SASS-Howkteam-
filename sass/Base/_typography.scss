@@ -2,7 +2,7 @@
 .header__heading-text{
     text-align: center;
     position: relative;
-    top: 5%;
+    top: 2%;
     &--main{
         text-transform: uppercase;
         font-family: HarryPotter;
@@ -69,5 +69,28 @@
             animation: moveInTop .5s ease-in 1s ; 
             animation-fill-mode: backwards;
         }
+    }
+}
+
+.about--info{
+    width: 50%;
+    &__heading-text{
+        font-family: title-font, sans-serif;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        font-size: 3.75rem;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        color: $color-title;
+        padding: 38px 0 8px;
+        border-top: solid 15px;
+        border-bottom: solid 2px;
+    }
+    &__text{
+        font-family: text-font, sans-serif;
+        color: #333;
+        font-size: 1.125rem;
+        line-height: 1.5;
+        margin-bottom: 20px;
     }
 }

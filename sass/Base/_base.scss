@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+html{
+    background-color: #fad7f7;
+    scroll-behavior: smooth;
+}
 @font-face {
     font-family:Petica;
     src:url('../font/Pecita.otf') format('opentype');
@@ -16,3 +20,24 @@
     font-style:normal;
 
  }
+ @font-face {
+     font-family: title-font;
+     src: url('../../font/d-din.bold.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+ }
+
+ @font-face{
+     font-family: text-font;
+     src: url('../../font/d-din.regular.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+ }
+
+@font-face {
+    font-family: title-font-1;
+    src: url("../../font/d-din.exp.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

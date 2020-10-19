@@ -1,5 +1,5 @@
 @keyframes change-bg{
-    0%, 100%{   
+    100%{   
         background-image:linear-gradient(90deg ,$background-linear-from, $background-linear-to ), url("../img/bg1.png");
     }
     25%{
@@ -13,6 +13,7 @@
 
     }
 }
+
 @keyframes appear {
     0%{
         opacity: 0;
